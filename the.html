@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="Activity.css">
-    </head>
-    <header> My Portfolio</header>
-    <body>
-        <h1>Hello,I'm</h1>
-        <h2>Shalini</h2>
-        <h4>B.Tech CSE(data science) Student</h4>
-        <p>I Love Coding,Learning New Technologies,and <br> building simple web projects.</p>
-        <button>View my projects</button>
-        <button>Contact Me</button>
-        <h3>About Me</h3>
-        <p>I am a first year B.Tech CSE Student.<br>I am  studying in Dr.RVR NRI University.<br>I am  very passionate about programming and AI/ML.<br>I am  always eager to learn new skills.</p>
-        <h3>Educational Qualifications</h3>
-        <p>B.Tech CSE(data science)    Dr.RVR NRI University(DTBU)    2026 - 2030</p>
-        <p>Intermediate(MPC)      DKNP Jr x College         2023 - 2025</p>
-        <p>board of secondary education(10th)             Thrividha English medium High School           2022 - 2023</p>
-        <h2>Technical Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>C Programming</span>
-                <span>Git & GitHub</span>
-            </div>     
-        <section id="hobbies">
-        <h2>My Hobbies</h2>
-            <div class="hobbies">
-                <div class="hobby">
-                <span>🎮</span>
-                <p>Gaming</p>
-                </div>
-                <div class="hobby">
-                <span>🎵</span>
-                <p>Listening to Music</p>
-                </div>
-                <div class="hobby">
-                <span>📚</span>
-                <p>Reading</p>
-                </div>
-                <div class="hobby">
-                <span>📷</span>
-                <p>Photography</p>
-                </div>
-            </div>
-        </section>
-        <h2>Achievements</h2>
-        <ul>
-            <li>Completed 10th and 12th with Good marks</li>
-            <li>Built small web projects using HTML and CSS</li>
-            <li>Continuously learning new technologies </li>
-        </ul>      
-        <section id="projects">
-            <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-            <h3>Student Information Page</h3>
-            <p>A simple website about me using HTML and CSS.</p>
-            <a href="Task-1.html">View Project</a>
-            </div>
-            <div class="project-card">
-            <h3>College Information</h3>
-            <p>A gaming website created using HTML and CSS.</p>
-            <a href="Task-2.html">View Project</a>
-            </div>
-            <div class="project-card">
-            <h3>Student Registration Form</h3>
-            <p>A webpage displaying student details.</p>
-            <a href="student.html">View Project</a>
-            </div>
-        </div>
-        </section>
-    </body>    
+<head>
+    <title>NRI College Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f5f9;
+        }
+        header {
+            background: #123456;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        nav a:hover { color: yellow; }
+        .banner {
+            background: #2874a6;
+            color: white;
+            padding: 45px 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 6px #bbb;
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h2 { color: #123456; }
+        footer {
+            background: #123456;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media(max-width: 600px) {
+            nav a { display: inline-block; margin: 6px; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body >
+
+<header>
+    <h1>NRI College</h1>
+    <p>Learn Today, Lead Tomorrow</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>Welcome to NRI College</h1>
+    <p>Quality Education for a Bright Future</p>
+    <a href="#admissions" style="color:white;">Apply for Admission</a>
+</div>
+
+<section id="about" style="text-align:center;padding:15px;">
+    <h2>About Our College</h2>
+    <p>We provide quality education and practical learning
+    to prepare students for successful careers.</p>
+</section>
+
+<h2 style="text-align:center;">Departments & Courses</h2>
+<div class="container" id="departments">
+    <div class="card"><h3>CSE</h3><p>B.Tech Computer Science</p></div>
+    <div class="card"><h3>ECE</h3><p>Electronics Engineering</p></div>
+    <div class="card"><h3>EEE</h3><p>Electrical Engineering</p></div>
+    <div class="card"><h3>AI & DS</h3><p>Artificial Intelligence</p></div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h3>Faculty</h3>
+        <p>Experienced professors and lecturers.</p>
+    </div>
+    <div class="card" id="admissions">
+        <h3>Admissions</h3>
+        <p>Submit your application and required certificates.</p>
+    </div>
+    <div class="card" id="facilities">
+        <h3>Campus Facilities</h3>
+        <p>Library, laboratories, sports and Wi-Fi.</p>
+    </div>
+    <div class="card">
+        <h3>College Events</h3>
+        <p>Technical fests, cultural programs and workshops.</p>
+    </div>
+</div>
+
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@NRIcollege.edu</p>
+    <p>Phone: +91 6302850495</p>
+    <p>Address: Your College Address</p>
+    <p>© 2026 NRI College</p>
+</footer>
+
+</body>
 </html>
