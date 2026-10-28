@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f6ff;
+    color: #17365d;
+}
+
+header {
+    background: #17365d;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    background: #d6e8ff;
+    text-align: center;
+    padding: 35px;
+}
+
+.booking {
+    background: white;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #cccccc;
+}
+
+.booking h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: #1769d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    width: 220px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #cccccc;
+}
+
+footer {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

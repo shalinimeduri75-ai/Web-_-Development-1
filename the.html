@@ -1,122 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NRI College Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f2f5f9;
-        }
-        header {
-            background: #123456;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-        nav a:hover { color: yellow; }
-        .banner {
-            background: #2874a6;
-            color: white;
-            padding: 45px 10px;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            width: 220px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 6px #bbb;
-            transition: 0.3s;
-        }
-        .card:hover { transform: translateY(-5px); }
-        h2 { color: #123456; }
-        footer {
-            background: #123456;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        @media(max-width: 600px) {
-            nav a { display: inline-block; margin: 6px; }
-            .card { width: 100%; }
-        }
-    </style>
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="booking.css">
 </head>
-<body >
+<body>
 
 <header>
-    <h1>NRI College</h1>
-    <p>Learn Today, Lead Tomorrow</p>
+    <h1>Easy Travel</h1>
     <nav>
-        <a href="#about">About</a>
-        <a href="#departments">Departments</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#facilities">Facilities</a>
+        <a href="#">Home</a>
+        <a href="#booking">Book Tickets</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<div class="banner">
-    <h1>Welcome to NRI College</h1>
-    <p>Quality Education for a Bright Future</p>
-    <a href="#admissions" style="color:white;">Apply for Admission</a>
-</div>
-
-<section id="about" style="text-align:center;padding:15px;">
-    <h2>About Our College</h2>
-    <p>We provide quality education and practical learning
-    to prepare students for successful careers.</p>
+<section class="hero">
+    <h2>Book Your Journey</h2>
+    <p>Travel safely and comfortably.</p>
 </section>
 
-<h2 style="text-align:center;">Departments & Courses</h2>
-<div class="container" id="departments">
-    <div class="card"><h3>CSE</h3><p>B.Tech Computer Science</p></div>
-    <div class="card"><h3>ECE</h3><p>Electronics Engineering</p></div>
-    <div class="card"><h3>EEE</h3><p>Electrical Engineering</p></div>
-    <div class="card"><h3>AI & DS</h3><p>Artificial Intelligence</p></div>
-</div>
+<section class="booking" id="booking">
+    <h2>Ticket Booking</h2>
 
-<div class="container">
+    <form>
+        <label>Travel Type</label>
+        <select>
+            <option>Bus</option>
+            <option>Train</option>
+        </select>
+
+        <label>From</label>
+        <input type="text" placeholder="Enter starting place" required>
+
+        <label>To</label>
+        <input type="text" placeholder="Enter destination" required>
+
+        <label>Journey Date</label>
+        <input type="date" required>
+
+        <label>Passengers</label>
+        <input type="number" min="1" value="1" required>
+
+        <button type="submit">Search Tickets</button>
+    </form>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
     <div class="card">
-        <h3>Faculty</h3>
-        <p>Experienced professors and lecturers.</p>
+        <h3>Bus Booking</h3>
+        <p>Book bus tickets for your journey.</p>
     </div>
-    <div class="card" id="admissions">
-        <h3>Admissions</h3>
-        <p>Submit your application and required certificates.</p>
-    </div>
-    <div class="card" id="facilities">
-        <h3>Campus Facilities</h3>
-        <p>Library, laboratories, sports and Wi-Fi.</p>
-    </div>
+
     <div class="card">
-        <h3>College Events</h3>
-        <p>Technical fests, cultural programs and workshops.</p>
+        <h3>Train Booking</h3>
+        <p>Plan your train journey easily.</p>
     </div>
-</div>
+</section>
 
 <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@NRIcollege.edu</p>
-    <p>Phone: +91 6302850495</p>
-    <p>Address: Your College Address</p>
-    <p>© 2026 NRI College</p>
+    <p>Contact: easytravel@example.com</p>
+    <p>Easy Travel | Your Journey, Our Priority</p>
 </footer>
 
 </body>
